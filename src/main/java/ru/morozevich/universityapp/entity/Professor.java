@@ -33,7 +33,7 @@ public class Professor implements UniMember, Tutor {
 
     @Override
     public void takeExam() {
-        System.out.println("Я профессор " + name + ", я принимаю экзамен в " + university.getName() +" у "+student.getName()+"а!");
+        System.out.println("Я профессор " + name + ", я принимаю экзамен в " + university.getName() + " у " + student.getName() + "а!");
     }
 
     public String getName() {

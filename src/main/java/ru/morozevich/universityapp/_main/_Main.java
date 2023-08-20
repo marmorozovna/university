@@ -15,8 +15,8 @@ public class _Main {
         LearnerExecutor learnerExecutor = new LearnerExecutor();
 
         University university = new University("СПБГУ");
-        Student student = new Student("Петров",university);
-        Professor professor = new Professor ("Лавочкин", university, student);
+        Student student = new Student("Петров", university);
+        Professor professor = new Professor("Лавочкин", university, student);
         student.setProfessor(professor);
 
         uniMemberExecutor.makeAttendLectures(student);
