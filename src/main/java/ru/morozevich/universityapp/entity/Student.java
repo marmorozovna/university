@@ -3,9 +3,7 @@ package ru.morozevich.universityapp.entity;
 public class Student implements UniMember, Learner {
 
     private String name;
-
     private University university;
-
     private Professor professor;
 
     public Student() {

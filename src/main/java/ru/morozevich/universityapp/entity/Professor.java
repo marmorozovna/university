@@ -1,11 +1,9 @@
 package ru.morozevich.universityapp.entity;
 
-public class Professor implements UniMember, Tutor {
+public class Professor implements UniMember, Lecturer {
 
     private String name;
-
     private Student student;
-
     private University university;
 
     public Professor() {
@@ -39,4 +37,5 @@ public class Professor implements UniMember, Tutor {
     public String getName() {
         return name;
     }
+
 }

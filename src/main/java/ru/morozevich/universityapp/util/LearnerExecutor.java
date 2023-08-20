@@ -7,4 +7,5 @@ public class LearnerExecutor {
     public void makePassExam (Learner learner){
         learner.passExam();
     }
+
 }

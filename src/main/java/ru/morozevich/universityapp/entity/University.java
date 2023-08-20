@@ -13,4 +13,5 @@ public class University {
     public String getName() {
         return name;
     }
+
 }

@@ -1,7 +1,7 @@
 package ru.morozevich.universityapp.entity;
 
-public interface Learner {
+public interface Lecturer {
 
-    void passExam();
+    void takeExam();
 
 }
