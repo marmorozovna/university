@@ -3,7 +3,8 @@ package ru.morozevich.universityapp.entity;
 public class Professor implements UniMember, Tutor {
 
     private String name;
-    private int age;
+
+    private Student student;
 
     private University university;
 
@@ -14,9 +15,10 @@ public class Professor implements UniMember, Tutor {
         this.name = name;
     }
 
-    public Professor(String name, University university) {
+    public Professor(String name, University university, Student student) {
         this(name);
         this.university = university;
+        this.student = student;
     }
 
     @Override
@@ -31,7 +33,7 @@ public class Professor implements UniMember, Tutor {
 
     @Override
     public void takeExam() {
-        System.out.println("Я профессор " + name + ", я принимаю экзамен в " + university.getName() + "!");
+        System.out.println("Я профессор " + name + ", я принимаю экзамен в " + university.getName() +" у "+student.getName()+"а!");
     }
 
     public String getName() {
