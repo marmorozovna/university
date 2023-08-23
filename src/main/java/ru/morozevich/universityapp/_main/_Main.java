@@ -9,16 +9,13 @@ import ru.morozevich.universityapp.util.UniMemberExecutor;
 
 public class _Main {
     public static void main(String[] args) {
-
         UniMemberExecutor uniMemberExecutor = new UniMemberExecutor();
         LecturerExecutor lecturerExecutor = new LecturerExecutor();
         LearnerExecutor learnerExecutor = new LearnerExecutor();
-
         University university = new University("СПБГУ");
         Student student = new Student("Петров", university);
         Professor professor = new Professor("Лавочкин", university, student);
         student.setProfessor(professor);
-
         uniMemberExecutor.makeAttendLectures(student);
         uniMemberExecutor.makeAttendLectures(professor);
         uniMemberExecutor.makeVisitLibrary(student);
